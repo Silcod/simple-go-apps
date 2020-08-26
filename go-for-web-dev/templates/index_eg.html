@@ -1,0 +1,14 @@
+<html lang="en">
+<head>
+</head>
+<body>
+    <p>Hello, {{ .Name }}</p>
+
+    {{ if .DBStatus }}
+        <p>The databse connection is alive! </p>
+    {{ else }}
+        <p>The databse connection is dead! </p>
+    {{ end }}
+
+</body>
+</html>
